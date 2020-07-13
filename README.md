@@ -10,4 +10,4 @@ Short Python Script to unpack SEAC Action DB into individual dives for importing
 
 
 ### Background
-The [Seac Action](https://seacsub.com/product/action/) was released at DEMA 2019. At the time of writing, it is not a supported computer in SubSurface. In order to import the dives, it was necessary to import them using the vedor's proprietary sync cable and software. The dive information was found to be stored in two tables in an SQLite3 Database. In order to import them into subsurface, they must be converted to CSV files.
+The [Seac Action](https://seacsub.com/product/action/) was released at DEMA 2019. At the time of writing, it is not a supported computer in SubSurface. In order to import the dives, it was necessary to download them using the vedor's proprietary sync cable and software. The dive information was found to be stored in two tables in an SQLite3 Database. To import them into subsurface, they must be converted to CSV files, which this script accomplishes.
