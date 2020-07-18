@@ -3,12 +3,16 @@
 
 import sqlite3
 import csv
+import os
+import sys
 
 # Global Variables
 divecount = 0  # Track the number of dives exported 
 
-# Open SQLite3 Database
-# TODO: Catch failure to open DB
+# Check for and open SQLite3 Database
+if not os.path.exists("divesDB.db"):
+    sys.exit("Dive database not found")
+
 conn = sqlite3.connect("divesDB.db")
 cur = conn.cursor()
 
